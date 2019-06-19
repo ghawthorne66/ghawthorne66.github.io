@@ -1,0 +1,19 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 7
+	- var page_active="Blog Post"
+	- var page_active_h1="Blog"
+
+block title
+	title Blog Post
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Blog")
+	include ../sections/blog/_section_blog_post-1
+
+	// Page Footer
+	include ../elements/_footer

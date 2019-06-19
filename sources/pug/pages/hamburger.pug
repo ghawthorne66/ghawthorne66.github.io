@@ -1,0 +1,21 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+
+block title
+	title Hamburger Menu, Light Minimal Footer
+
+block page
+
+	// Page Header
+	include ../elements/_header_hamburger
+
+	include ../sections/index/_section_transparent-1
+	//Section  Online Reputation Management
+	include ../sections/index/_section_index-2
+	//Section Latest Blog Posts
+	include ../sections/index/_section_index-10
+
+	// Page Footer
+	include ../elements/_footer_minimal_light

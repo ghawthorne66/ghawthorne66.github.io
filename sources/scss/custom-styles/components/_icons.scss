@@ -1,0 +1,173 @@
+//
+// Icons
+// --------------------------------------------------
+
+// Base styles
+// --------------------------------------------------
+
+.icon {
+  display: inline-block;
+  transition: .3s;
+  line-height: 1;
+
+  &:before {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+// Alternate icons
+// --------------------------------------------------
+
+.icon-default {
+
+}
+
+.icon-primary {
+  color: $primary;
+}
+
+.icon-emerland {
+  color: $color-emerland;
+}
+.icon-shake {
+  color: $color-shake;
+}
+
+.icon-darker {
+  color: $gray-darker;
+}
+.icon-base {
+  color: $gray-base;
+}
+
+.icon-dark {
+  color: $gray-dark;
+}
+
+.icon-gray-dark{
+  color:$gray-dark;
+}
+
+.icon-white {
+  color: $white;
+}
+.icon-gray{
+  color:$gray;
+}
+.icon-blue {
+  color: $gray;
+  &:hover {
+    background-color: $color-blue;
+    color: $white;
+  }
+  &.fa-facebook:hover{
+    background-color:#395b98;
+  }
+  &.fa-twitter:hover{
+    background-color:#2ca7e0;
+  }
+  &.fa-pinterest-p:hover{
+    background-color:#d83633 ;
+  }
+  &.fa-vimeo:hover{
+    background-color:#96d3f2 ;
+  }
+  &.fa-google:hover{
+    background-color:#d95139 ;
+  }
+}
+
+.icon-yellow {
+  color: $color-yellow;
+}
+
+.icon-yellow-round {
+  color: $white;
+  background-color: $color-yellow;
+}
+
+.icon-emerland-round {
+  color: $white;
+  background-color: $color-emerland;
+}
+
+.icon-shake-round {
+  color: $white;
+  background-color: $color-shake;
+}
+.icon-primary-round {
+  color: $white;
+  background-color: $primary;
+}
+
+.icon-shadow {
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .15);
+}
+
+// Button Sizes
+// --------------------------------------------------
+.icon-xxs {
+  font-size: 14px;
+}
+.icon-xxs-2 {
+  font-size: 16px;
+}
+.icon-xs {
+  font-size: 18px;
+}
+
+.icon-xs-square {
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 2.9;
+}
+
+.icon-sm {
+  font-size: 20px;
+}
+.icon-sm-2 {
+  font-size: 22px;
+}
+
+.icon-md {
+  font-size: 24px;
+}
+.icon-md-2{
+  font-size: 32px;
+}
+.icon-md-1{
+  font-size: 30px;
+}
+.icon-md-2{
+   font-size: 40px;
+ }
+
+.icon-lg {
+  font-size: 50px;
+}
+.icon-lg-2 {
+  font-size: 55px;
+}
+
+
+
+.icon-lg-round {
+  font-size: 60px;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  line-height: 1.85;
+}
+.icon-black-opacity{
+  opacity: .3;
+  color:#000;
+}

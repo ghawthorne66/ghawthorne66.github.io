@@ -1,0 +1,20 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 8
+	- var page_active="Contacts"
+	- var page_active_h1="Contacts"
+
+block title
+	title Contacts
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(1, "")
+	include ../sections/contacts/_section_contacts-1
+	include ../sections/contacts/_section_contacts-2
+
+	// Page Footer
+	include ../elements/_footer

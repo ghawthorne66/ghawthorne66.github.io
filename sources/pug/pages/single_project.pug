@@ -1,0 +1,25 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+	- var page_active="Single Project Page"
+	- var page_active_h1="Single Project Page"
+
+block title
+	title Single Project Page
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Pages")
+	include ../sections/pages/_section_single_project-1
+	//Section Key Performance Indicators
+	include ../sections/pages/_section_single_project-2
+	//Section Project’s Team
+	include ../sections/pages/_section_single_project-3
+	//Section Testimonials
+	include ../sections/pages/_section_single_project-4
+
+	// Page Footer
+	include ../elements/_footer

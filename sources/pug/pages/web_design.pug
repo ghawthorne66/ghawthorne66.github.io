@@ -1,0 +1,30 @@
+extends  ../_skeleton
+
+include ../mixins/_mixin_services
+block variables
+	- var activeIndex = 3
+	- var page_active="Web Design and Development"
+	- var page_active_h1="Web Design<br class='veil reveal-lg-inline'> and Development"
+
+	- var services=[{src:"services-2-240x194",href:"search_engine.html",title:"Search Engine Optimization"}, {src: "services-3-240x194", href: "social_media.html", title: "Social Media Management"}, {src: "services-4-240x194", href: "mail_marketing.html", title: "Email Marketing"}, {src: "services-5-240x194", href: "management.html", title: "Brand Reputation Management"},{src: "services-7-240x194", href: "content_marketing.html", title: "Content Marketing Management"},{src: "services-8-240x194", href: "advertising.html", title: "PPC Advertising Campaigns"}, {src: "services-9-240x194", href: "contextual.html", title: "Contextual Advertising"},{src: "services-10-240x194", href: "local_seo.html", title: "Local SEO"}]
+block title
+	title Web Design and Development
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Services")
+	//Section Web Design
+	include ../sections/services/_section_web_design-1
+	//Section Branding and logo design
+	include ../sections/services/_section_web_design-2
+	//Section Branding and logo design
+	include ../sections/services/_section_web_design-3
+	//Section testimonials
+	include ../sections/services/_section_management-3
+	//Section Other Services
+	include ../sections/services/_section_management-4
+
+	// Page Footer
+	include ../elements/_footer

@@ -1,0 +1,12 @@
+//
+// Sections
+// --------------------------------------------------
+
+// Section Spacing
+// -------------------------
+
+$insets: (15px,30px,34px,50px,55px,60px,63px, 80px,87px,100px,120px, 127px,237px, 315px,326px);
+
+@include indent-responsive(section, '', (padding-top, padding-bottom), $grid-breakpoints, $insets);
+@include indent-responsive(section, top, padding-top, $grid-breakpoints, $insets);
+@include indent-responsive(section, bottom, padding-bottom, $grid-breakpoints, $insets);

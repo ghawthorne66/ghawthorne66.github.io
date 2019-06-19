@@ -1,0 +1,22 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+
+block title
+	title Minimal Header, Dark Minimal Footer
+
+block page
+	// Page Header
+	include ../elements/_header_minimal
+
+	include ../sections/index/_section_transparent-1
+	//Section  Online Reputation Management
+	include ../sections/index/_section_index-2
+	//Section Latest Blog Posts
+	include ../sections/index/_section_index-10
+	//Section Our Clients
+	include ../sections/index/_section_index-8
+
+	// Page Footer
+	include ../elements/_footer_minimal_dark

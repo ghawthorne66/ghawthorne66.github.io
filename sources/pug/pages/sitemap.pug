@@ -1,0 +1,19 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+	- var page_active="Sitemap"
+	- var page_active_h1="Sitemap"
+
+block title
+	title Sitemap
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Pages")
+	include ../sections/pages/_section_sitemap-1
+
+	// Page Footer
+	include ../elements/_footer

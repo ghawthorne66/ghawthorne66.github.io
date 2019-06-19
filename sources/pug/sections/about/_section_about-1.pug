@@ -1,0 +1,26 @@
+section.section-50.section-lg-120
+	.container
+		.row.row-30
+			.col-lg-6.inset-lg-right-45
+				h3.divider-sm A Few Words About Us
+				p Our team of specialists consistently delivers outstanding results combining creative ideas with our vast experience. We can help you build a sustainable, meaningful relationship with your clients by engaging them with your brand using social media.
+				p We work in areas as diverse as search engine optimization, social media marketing, email marketing and digital marketing.
+			.col-lg-6
+				.video-block
+					img(src="images/about-1-570x320.jpg" alt="" width="570" height="320" )
+					button.mdi-play-circle-outline(type='button', data-toggle='modal', data-target='#exampleModal')
+
+// Modal
+#exampleModal.modal.modal-video(tabindex='-1', role='dialog')
+	.modal-dialog(role='document')
+		// Modal content
+		.modal-content
+			.modal-header
+				h4.modal-title Modal Video
+				button.close(type='button', data-dismiss='modal', aria-label='Close')
+					span(aria-hidden='true') ×
+			.modal-body
+				iframe(width='', height='', src='https://www.youtube.com/embed/-AhmuMqZB0s', allowfullscreen='')
+
+			.modal-footer
+				button.btn.btn-sm-2.btn-primary.btn-icon.btn-icon-left.btn-shadow.btn-rect(type='button', data-dismiss='modal') Close

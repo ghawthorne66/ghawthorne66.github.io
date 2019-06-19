@@ -1,0 +1,300 @@
+//
+// Custom Buttons Styles
+// --------------------------------------------------
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+  transition: .3s ease-out;
+  text-transform: uppercase;
+  font-family: $font-family-sec;
+  border: none;
+  display: inline-block;
+  &:focus,
+  &:active,
+  &:active:focus {
+    outline: none;
+  }
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+
+  }
+
+  &:active,
+  &.active {
+    box-shadow: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+
+  }
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-default {
+  @include button-variant-custom($gray-darker, transparent, $gray, $white, $gray-darker, $gray-darker);
+}
+
+.btn-primary {
+  @include button-variant-custom($white, $primary, $primary, $white, $color-emerland, $color-emerland);
+  &:focus {
+    color: $white;
+    background-color: $primary;
+  }
+  &:focus:hover {
+    background-color: $color-emerland;
+  }
+}
+
+.btn-emerland {
+  @include button-variant-custom($white, $color-emerland, $color-emerland, $white, $color-shake, $color-shake);
+  &:focus {
+    color: $white;
+    background-color: $color-emerland;
+  }
+  &:focus:hover {
+    background-color: $color-shake;
+  }
+}
+.btn-shake {
+  @include button-variant-custom($white, $color-shake, $color-shake, $white, $color-emerland, $color-emerland);
+  &:focus {
+    color: $white;
+    background-color: $color-shake;
+  }
+  &:focus:hover {
+    background-color: $color-emerland;
+  }
+}
+
+
+.btn-white {
+  @include button-variant-custom($color-downriver, $white, $white, $white, $primary, $primary);
+  &:focus {
+    color: $color-downriver;
+    background-color: $white;
+  }
+  &:focus:hover {
+    background-color: $primary;
+    color:$white;
+  }
+}
+
+// Success appears as green
+.btn-success {
+
+}
+
+// Info appears as blue-green
+.btn-info {
+
+}
+
+// Warning appears as orange
+.btn-warning {
+
+}
+
+// Danger and error appear as red
+.btn-danger {
+
+}
+
+.btn-border {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 137%;
+    width: 107.45%;
+    top: -10px;
+    left: -10px;
+    border: 10px solid rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+  }
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+.btn-xs {
+  font-size: 12px;
+  padding: 7px 20px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+.btn-xs-2 {
+  font-size: 12px;
+  padding: 10px 20px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+}
+
+.btn-sm {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 40px;
+  letter-spacing: 0.025em;
+}
+.btn-sm-2{
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 16px;
+  letter-spacing: 0.025em;
+  @include media-breakpoint-up(sm) {
+    padding: 15px 32px;
+  }
+}
+.btn-sm-3{
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 24px;
+  letter-spacing: 0.025em;
+  @include media-breakpoint-up(sm) {
+    padding: 15px 40px;
+  }
+
+}
+.btn-lg {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 40px;
+  letter-spacing: 0.025em;
+}
+
+// Button Shadow
+// -------------------------------------------------
+
+.btn-shadow {
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .15);
+  &:active{
+    box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, .15);
+  }
+}
+
+// Button Shapes
+// --------------------------------------------------
+
+.btn-rect {
+  border-radius: 5px;
+}
+
+.btn-rect-sm{
+  border-radius: 9px;
+}
+
+.btn-rect-md{
+  border-radius:27px;
+}
+// Button Icon styles
+// --------------------------------------------------
+
+.btn {
+
+  &.btn-icon {
+    vertical-align: middle;
+    span {
+      vertical-align: middle;
+    }
+    .icon {
+      vertical-align: middle;
+      transition: 0s;
+    }
+
+    &-left {
+      .icon {
+        padding-right: 10px;
+      }
+    }
+
+    &-right {
+      .icon {
+        float: right;
+        padding-left: 10px;
+      }
+    }
+
+  }
+}
+
+.btn-round{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  line-height: 3.9;
+}
+
+.btn-facebook {
+   @include button-variant-custom($white, #395b98, #395b98, $white, $color-emerland, $color-emerland);
+   &:focus {
+     color: $white;
+     background-color: #395b98;
+   }
+   &:focus:hover {
+     background-color: $color-emerland;
+   }
+ }
+
+.btn-twitter {
+  @include button-variant-custom($white, #2ca7e0, #2ca7e0, $white, $color-emerland, $color-emerland);
+  &:focus {
+    color: $white;
+    background-color: #2ca7e0;
+  }
+  &:focus:hover {
+    background-color: $color-emerland;
+  }
+}
+
+
+.btn-google {
+  @include button-variant-custom($white, #d95139, #d95139, $white, $color-emerland, $color-emerland);
+  &:focus {
+    color: $white;
+    background-color: #d95139;
+  }
+  &:focus:hover {
+    background-color: $color-emerland;
+  }
+}
+
+
+.btn-linkedin {
+  @include button-variant-custom($white, #107bc1, #107bc1, $white, $color-emerland, $color-emerland);
+  &:focus {
+    color: $white;
+    background-color: #107bc1;
+  }
+  &:focus:hover {
+    background-color: $color-emerland;
+  }
+}
+.btn-instagram {
+  @include button-variant-custom($white, #4879a1, #4879a1, $white, $color-emerland, $color-emerland);
+  &:focus {
+    color: $white;
+    background-color: #4879a1;
+  }
+  &:focus:hover {
+    background-color: $color-emerland;
+  }
+}

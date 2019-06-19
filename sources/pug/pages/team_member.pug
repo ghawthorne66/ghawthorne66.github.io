@@ -1,0 +1,23 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+	- var page_active="Team Member Page"
+	- var page_active_h1="Team Member Page"
+
+block title
+	title Team Member Page
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Pages")
+	include ../sections/pages/_section_team_member-1
+	//Section Jame's Projects
+	include ../sections/pages/_section_team_member-2
+	// Section Testimonials
+	include ../sections/pages/_section_team_member-3
+
+	// Page Footer
+	include ../elements/_footer

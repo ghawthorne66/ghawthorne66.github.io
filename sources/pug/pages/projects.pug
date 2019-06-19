@@ -1,0 +1,22 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 4
+	- var page_active="Our Projects"
+	- var page_active_h1="Our Projects"
+
+block title
+	title Our Projects
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(1, "")
+	//Section The Main Areas of Work
+	include ../sections/projects/_section_projects-1
+	//Section Cases
+	include ../sections/projects/_section_projects-2
+
+	// Page Footer
+	include ../elements/_footer

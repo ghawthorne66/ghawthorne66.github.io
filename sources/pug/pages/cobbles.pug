@@ -1,0 +1,20 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 6
+	- var page_active="Cobbles Gallery"
+	- var page_active_h1="Gallery"
+
+block title
+	title Cobbles Gallery
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Gallery")
+	//Section Cobbles gallery
+	include ../sections/gallery/_section_cobbles-1
+
+	// Page Footer
+	include ../elements/_footer

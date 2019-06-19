@@ -1,0 +1,46 @@
+section.section-50.section-lg-80.bg-downriver.section-lg-top-100
+	.container
+		.row.justify-content-xl-end
+			.col-lg-4.text-xl-center.img-width-auto
+				+png-2("margin-lg-top-309 veil reveal-lg-inline","analysis-1-230x250")
+		h3.divider-sm.txt-white.offset-top-40.offset-xl-top-0 Fill The Form
+		form.rd-mailform.offset-xl-top-90.rd-mailform-2.offset-top-60
+			.row.row-20.row-lg-30.justify-content-xl-between
+				.col-md-5
+					.form-wrap.form-wrap-outside
+						label.form-label-outside(for="contact-name1") Site URL
+						input#contact-name1.form-input(type="text" name="name" data-constraints="@Required")
+				.col-md-4
+					.form-wrap.form-wrap-outside
+						label.form-label-outside(for="last-name") Your Name
+						input#last-name.form-input(type="text" name="name" data-constraints="@Required")
+				.col-md-3
+					.form-wrap.form-wrap-outside
+						label.form-label-outside(for="contact-email1") Your E-Mail
+						input#contact-email1.form-input(type="email" name="email" data-constraints="@Required @Email")
+				.col-md-8.col-lg-9
+					.form-wrap.form-wrap-outside
+						label.form-label-outside(for="contact-message") Notes
+						textarea#contact-message.form-input(name="message")
+				.col-md-4.col-lg-3
+					+switch("","switch", "Keyword Research")
+					+switch("offset-top-17","switch1", "Competitors Report")
+					+switch("offset-top-17","switch2", "Traffic Prediction")
+			.offset-top-27
+				.divider-lg-4
+			.row.justify-content-xl-end.offset-top-12
+				.col-xl-3
+					button(type="submit").btn.btn-primary.btn-sm-2.btn-shadow.btn-rect.btn-icon.btn-icon-left.offset-top-18
+						span.icon.icon-white.icon-md.mdi-calculator
+						span calculate
+		.row.justify-content-xl-end.offset-top-31
+			.col-xl-5.text-center
+				.block-round-black.order-block
+
+						h5.txt-base.d-inline-block.text-middle Total:
+							=" "
+							span.txt-white $3,299
+
+						a(href="#").btn.btn-shake.btn-sm-2.btn-shadow.btn-rect.btn-icon.btn-icon-left
+							span.icon.icon-white.icon-md.mdi-checkbox-marked-circle-outline
+							span order service

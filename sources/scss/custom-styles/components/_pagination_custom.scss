@@ -1,0 +1,27 @@
+//
+// Pagination Custom
+// --------------------------------------------------
+.pagination-custom {
+  font-family: $font-family-sec;
+  font-size: 20px;
+  font-weight: 700;
+
+  li {
+    display: inline-block;
+    a, span {
+      color: $color-shake;
+      vertical-align: middle;
+    }
+    a:hover{
+      color:$gray-dark;
+    }
+  }
+  li + li {
+    margin-left: 20px;
+  }
+  .disabled {
+    span{
+      color: $gray-dark;
+    }
+  }
+}

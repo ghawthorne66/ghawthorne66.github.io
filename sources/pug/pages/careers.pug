@@ -1,0 +1,24 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+	- var page_active="Careers"
+	- var page_active_h1="Careers"
+
+block title
+	title Careers
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Pages")
+	//Section Join Our Team
+	include ../sections/pages/_section_careers_1
+	//Section Explore Our Corporate Culture
+	include ../sections/pages/_section_careers_2
+	//Section Your Career Starts Here
+	include ../sections/pages/_section_careers_3
+
+	// Page Footer
+	include ../elements/_footer

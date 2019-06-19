@@ -1,0 +1,20 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+	- var page_active="Icons"
+	- var page_active_h1="Icons"
+
+block title
+	title Icons
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Elements")
+	include ../sections/elements/_section_icons-1
+	include ../sections/elements/_mdi
+
+	// Page Footer
+	include ../elements/_footer

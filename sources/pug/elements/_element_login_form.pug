@@ -1,0 +1,20 @@
+// RD Mailform
+form.offset-top-30.rd-mailform(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
+	.form-wrap.form-wrap-outside
+		label.form-label-outside(for="contact-name") Username or e-mail
+		input#contact-name.form-input(type="email" name="email" data-constraints="@Required @Email")
+	.form-wrap.form-wrap-outside.offset-top-20
+		label.form-label-outside(for="password") Password
+		input#password.form-input(type="password" name="password" data-constraints="@Required")
+	.form-meta.offset-top-17
+		button(type="submit").btn.btn-emerland.btn-sm-2.btn-shadow.btn-rect.btn-icon.btn-icon-left
+			span.icon.icon-white.icon-md.mdi-login
+			span sign in
+		span.text.txt-base or enter with
+		.btn-group-custom-1
+			a(href="#").btn.btn-facebook.btn-shadow.btn-round
+				span.fa-facebook-f.icon.icon-md
+			a(href="#").btn.btn-twitter.btn-shadow.btn-round
+				span.fa-twitter.icon.icon-md
+			a(href="#").btn.btn-google.btn-shadow.btn-round
+				span.fa-google.icon.icon-md

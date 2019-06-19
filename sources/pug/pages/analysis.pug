@@ -1,0 +1,20 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+	- var page_active="Free Site Analysis"
+	- var page_active_h1="Free Site Analysis"
+
+block title
+	title Free Site Analysis
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Pages")
+	//Section Fill The Form
+	include ../sections/pages/_section_analysis_1
+
+	// Page Footer
+	include ../elements/_footer

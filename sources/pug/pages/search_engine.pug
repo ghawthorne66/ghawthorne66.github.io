@@ -1,0 +1,31 @@
+extends  ../_skeleton
+
+include ../mixins/_mixin_services
+block variables
+  - var activeIndex = 3
+  - var page_active="Search Engine Optimization"
+  - var page_active_h1="Search Engine<br class='veil reveal-lg-inline'> Optimization"
+
+  - var services=[{src: "services-3-240x194", href: "social_media.html", title: "Social Media Management"}, {src: "services-4-240x194", href: "mail_marketing.html", title: "Email Marketing"}, {src: "services-5-240x194", href: "management.html", title: "Brand Reputation Management"}, {src: "services-6-240x194", href: "web_design.html", title: "Web Design and Development"},{src: "services-7-240x194", href: "content_marketing.html", title: "Content Marketing Management"},{src: "services-8-240x194", href: "advertising.html", title: "PPC Advertising Campaigns"}, {src: "services-9-240x194", href: "contextual.html", title: "Contextual Advertising"},{src: "services-10-240x194", href: "local_seo.html", title: "Local SEO"}]
+block title
+  title Search Engine Optimization
+
+block page
+  // Page Header
+  include ../elements/_header
+
+  // Page Content
+  +breadcrumbs(2, "Services")
+  //Section SEO
+  include ../sections/services/_section_seo-1
+  //Section Contextual advertising
+  include ../sections/services/_section_seo-2
+  //Section Keyword Research / Strategy
+  include ../sections/services/_section_seo-3
+  //Section testimonials
+  include ../sections/services/_section_management-3
+  //Section Other Services
+  include ../sections/services/_section_management-4
+
+  // Page Footer
+  include ../elements/_footer

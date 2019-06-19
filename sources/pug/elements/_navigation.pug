@@ -1,0 +1,241 @@
+// RD Navbar
+.rd-navbar-wrap
+	nav.rd-navbar&attributes(rd_navbar_data_adjuster)
+		.top-panel.clearfix
+			ul.list-inline
+				li
+					a(href="#").fa-facebook.icon.icon-blue.icon-xs-square
+				li
+					a(href="#").fa-twitter.icon.icon-blue.icon-xs-square
+				li
+					a(href="#").fa-pinterest-p.icon.icon-blue.icon-xs-square
+				li
+					a(href="#").fa-vimeo.icon.icon-blue.icon-xs-square
+				li
+					a(href="#").fa-google.icon.icon-blue.icon-xs-square
+				li
+					a(href="#").fa-rss.icon.icon-blue.icon-xs-square
+			.contact-info
+				.telephone
+					span.icon.icon-emerland.icon-sm.mdi-phone
+					a(href="callto:#") 1-800-1234-567
+				address.address
+					span.icon.icon-emerland.icon-sm.mdi-map-marker
+					.link-block.text-middle
+						a(href="#") 2130 Fulton Street San Diego, CA 94117-1080 USA
+				.mail
+					span.icon.icon-emerland.icon-sm.mdi-email-outline
+					a(href="mailto:#") info@demolink.org
+
+		.rd-navbar-inner
+			// RD Navbar Top Panel
+			.rd-navbar-wrap
+				.rd-navbar-telephone
+					span.icon.icon-emerland.icon-sm.mdi-phone.text-middle
+					=" "
+					a(href="callto:#").text-middle 1-800-1234-567
+				// RD Navbar Panel
+				.rd-navbar-panel
+					// RD Navbar Toggle
+					button.rd-navbar-toggle(data-rd-navbar-toggle='.rd-navbar-nav-wrap')
+						span
+					// RD Navbar Brand
+					.rd-navbar-brand
+						a.brand-name(href='index.html')
+							+png('logo-default-169x42').logo-dark
+							+png('logo-inverse2-169x42').logo-light
+				.rd-navbar-nav-wrap
+					// RD Navbar Brand
+					.rd-navbar-brand.brand-fixed
+						a.brand-name(href='index.html')
+							+png('logo-default-169x42')
+					// RD Navbar Nav
+					ul.rd-navbar-nav
+						li(class=(activeIndex == 1 ? 'active' : ''))
+							a(href='./') Home
+						li(class=(activeIndex == 2 ? 'active' : ''))
+							a(href='about.html') About
+						li(class=(activeIndex == 3 ? 'active' : ''))
+							a(href='#') Services
+							// RD Navbar Dropdown
+							ul.rd-navbar-dropdown
+								li
+									a(href='search_engine.html') Search Engine Optimization
+								li
+									a(href='social_media.html') Social Media Management
+								li
+									a(href='mail_marketing.html') Email Marketing
+								li
+									a(href='management.html') Brand Reputation Management
+								li
+									a(href='web_design.html') Web Design and Development
+								li
+									a(href='content_marketing.html') Content Marketing
+								li
+									a(href='advertising.html') PPC Advertising Campaigns
+								li
+									a(href='contextual.html') Contextual Advertising
+								li
+									a(href='local_seo.html') Local SEO
+
+						li(class=(activeIndex == 4 ? 'active' : ''))
+							a(href='projects.html') Our projects
+						li(class=(activeIndex == 5 ? 'active' : ''))
+							a(href='#') Pages
+							// RD Navbar Megamenu
+							ul.rd-navbar-megamenu
+								li
+									h6.font-sec Pages 1
+									.divider-lg.offset-top-10
+									ul.offset-top-20
+										li
+											a(href='clients.html') Clients
+										li
+											a(href='partners.html') Partners
+										li
+											a(href='privacy.html') Terms of Use
+										li
+											a(href='sitemap.html') Sitemap
+										li
+											a(href='404.html') 404 Page
+										li
+											a(href='503.html') 503 Page
+										li
+											a(href='quote.html') Quote Request
+										li
+											a(href='team.html') Our Team
+										li
+											a(href='team_member.html') Team Member page
+								li
+									h6.font-sec Pages 2
+									.divider-lg.offset-top-10
+									ul.offset-top-20
+										li
+											a(href='careers.html') Careers
+										li
+											a(href='faq.html') FAQ Page
+										li
+											a(href='pricing.html') Pricing
+										li
+											a(href='coming.html') Coming Soon
+										li
+											a(href='maintenance.html') Maintenance Page
+										li
+											a(href='construction.html') Under Construction
+										li
+											a(href='login.html') Login/Register
+										li
+											a(href='single_project.html') Single Project Page
+										li
+											a(href='services.html') Services
+										li
+											a(href='analysis.html') Free Site Analysis
+								li
+									h6.font-sec Layouts
+									.divider-lg.offset-top-10
+									ul.offset-top-20
+										li
+											a(href='corporate_header.html') Corporate Header, Light Widget Footer
+										li
+											a(href='transparent_header.html') Transparent Header, Dark Widget Footer
+										li
+											a(href='center_header.html') Center Header, Dark Center Footer
+										li
+											a(href='minimal_header.html') Minimal Header, Dark Minimal Footer
+										li
+											a(href='hamburger.html') Hamburger Menu, Light Minimal Footer
+										li
+											a(href='corporate_header_2.html') Corporate Header, Light Center Footer
+								li
+									h6.font-sec Elements
+									.divider-lg.offset-top-10
+									ul.offset-top-20
+										li
+											a(href='typography.html') Typography
+										li
+											a(href='tabs.html') Tabs and Accordions
+										li
+											a(href='icons.html') Icons
+										li
+											a(href='buttons.html') Buttons
+										li
+											a(href='grid.html') Grid
+										li
+											a(href='tables.html') Tables
+										li
+											a(href='forms.html') Forms
+										li
+											a(href='progress_bars.html') Progress Bars
+
+						li(class=(activeIndex == 6 ? 'active' : ''))
+							a(href='#') Gallery
+							// RD Navbar Dropdown
+							ul.rd-navbar-dropdown
+								li
+									a(href='grid_gallery.html') Grid Gallery
+								li
+									a(href='no_padding.html') Gallery without Padding
+								li
+									a(href='cobbles.html') Cobbles Gallery
+								li
+									a(href='masonry_gallery.html') Masonry Gallery
+
+						li(class=(activeIndex == 7 ? 'active' : ''))
+							a(href='#') Blog
+							// RD Navbar Dropdown
+							ul.rd-navbar-dropdown
+								li
+									a(href='default_blog.html') Classic Blog
+								li
+									a(href='grid_blog.html') Grid Blog
+								li
+									a(href='masonry_blog.html') Masonry Blog
+								li
+									a(href='modern_blog.html') Modern Blog
+								li
+									a(href='blog-post.html') Post Page
+						li(class=(activeIndex == 8 ? 'active' : ''))
+							a(href='contacts.html') Contacts
+						li.li-only-fixed
+							//RD Search
+							form.rd-search.rd-navbar-search(action="search-results.html", method="GET", data-search-live="rd-search-results-live")
+								.form-wrap
+									input(class="form-input" id="rd-search-form-input-1" type="text" name="s" autocomplete="off", placeholder="Search")
+									button(type="submit").icon.fa-search.icon-gray-dark
+							.telephone.telephone-fixed
+								span.icon.icon-emerland.icon-sm.mdi-phone.text-middle
+								a(href="callto:#").text-middle 1-800-1234-567
+							.mail.mail-fixed
+								span.icon.icon-emerland.icon-sm.mdi-email-outline.text-middle
+								=" "
+								a(href="mailto:#").text-middle info@demolink.org
+							address.address.address-fixed
+								span.icon.icon-emerland.icon-sm.mdi-map-marker
+								.link-block.text-middle
+									a(href="#") 2130 Fulton Street San Diego, CA 94117-1080 USA
+							ul.list-inline.list-inline-fixed
+								li
+									a(href="#").fa-facebook.icon.icon-blue.icon-xs-square
+								li
+									a(href="#").fa-twitter.icon.icon-blue.icon-xs-square
+								li
+									a(href="#").fa-pinterest-p.icon.icon-blue.icon-xs-square
+								li
+									a(href="#").fa-vimeo.icon.icon-blue.icon-xs-square
+								li
+									a(href="#").fa-google.icon.icon-blue.icon-xs-square
+								li
+									a(href="#").fa-rss.icon.icon-blue.icon-xs-square
+
+
+
+					//RD Search
+					form.rd-search.rd-navbar-search.rd-navbar-search-sm(action="search-results.html", method="GET", data-search-live="rd-search-results-live")
+						.form-wrap
+							input(class="form-input" id="rd-search-form-input" type="text" name="s" autocomplete="off", placeholder="Search")
+							button(type="submit").icon.fa-search.icon-gray-dark
+						#rd-search-results-live.rd-search-results-live
+					span.icon.icon-xs.icon-darker.rd-navbar-search-toggle(data-rd-navbar-toggle=".rd-navbar-search-sm", data-custom-toggle-disable-on-blur="true")
+				a(href="analysis.html").btn.btn-primary.btn-xs-2.btn-shadow.btn-rect.btn-icon.btn-icon-left
+					span.icon.icon-xs.mdi-chart-bar
+					span Free Site Analysis

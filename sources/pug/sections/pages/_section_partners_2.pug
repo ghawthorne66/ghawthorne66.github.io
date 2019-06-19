@@ -1,0 +1,32 @@
+section.section-50.section-lg-120
+	.container
+		h3.text-center.divider-sm.divider-sm-mod-1 Become a Partner
+		.row.offset-top-90.justify-content-center
+			.col-lg-8
+				// RD Mailform
+				form.rd-mailform(data-form-output="form-output-global", data-form-type='contact', method='post', action='bat/rd-mailform.php')
+					.row.row-20
+						.col-md-6
+							.form-wrap.form-wrap-outside
+								label.form-label-outside(for="contact-name1") First Name
+								input#contact-name1.form-input(type="text" name="name" data-constraints="@Required")
+						.col-md-6
+							.form-wrap.form-wrap-outside
+								label.form-label-outside(for="last-name") Last Name
+								input#last-name.form-input(type="text" name="name" data-constraints="@Required")
+						.col-md-6
+							.form-wrap.form-wrap-outside
+								label.form-label-outside(for="contact-email") E-Mail
+								input#contact-email.form-input(type="email" name="email" data-constraints="@Required @Email")
+						.col-md-6
+							.form-wrap.form-wrap-outside
+								label.form-label-outside(for="contact-phone") Phone
+								input#contact-phone.form-input(type="text" name="phone" data-constraints="@Required @Numeric")
+						.col-sm-12
+							.form-wrap.form-wrap-outside
+								label.form-label-outside(for="contact-message") Message
+								textarea#contact-message.form-input(name="message" data-constraints="@Required")
+							.text-center
+								button(type="submit").btn.btn-primary.btn-sm-2.btn-shadow.btn-rect.btn-icon.btn-icon-left.offset-top-18
+									span.icon.icon-white.icon-md.mdi-message-text-outline
+									span send message

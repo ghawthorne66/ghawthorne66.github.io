@@ -1,0 +1,20 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+	- var page_active="Grid"
+	- var page_active_h1="Grid"
+
+block title
+	title Grid
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Elements")
+	//Section Grid System
+	include ../sections/elements/_section_grid-1
+
+	// Page Footer
+	include ../elements/_footer

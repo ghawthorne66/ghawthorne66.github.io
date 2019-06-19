@@ -1,0 +1,356 @@
+//
+// Utility classes custom
+// --------------------------------------------------
+
+//text helpers
+/////////////////////////
+.txt-italic {
+  font-style: italic;
+}
+
+.fw-b {
+  font-weight: 700;
+}
+
+.fw-n {
+  font-weight: 400;
+}
+.tooltip{
+  z-index: 2;
+}
+.tooltip-inner {
+  background-color: $color-shake;
+  color: $white;
+}
+.tooltip.in{
+  opacity: 1;
+
+}
+
+
+.tooltip.top .tooltip-arrow  {
+  border-top-color: $color-shake;
+}
+.tooltip.bottom .tooltip-arrow{
+  border-bottom-color: $color-shake;
+
+}
+
+//Dividers
+/////////////////////
+
+.divider-xs {
+  position: relative;
+  &:before {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    display: inline-block;
+    height: 5px;
+    width: 30px;
+    background-color: $gray-light;
+    border-radius: 2px;
+  }
+  &-mod-1 {
+    &:before {
+      bottom: -20px;
+    }
+  }
+}
+
+.divider-sm {
+  position: relative;
+  &:before {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    width: 70px;
+    background-color: $color-emerland;
+    border-radius: 2px;
+
+  }
+  &-mod-1 {
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &-mod-2 {
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $color-shake;
+    }
+  }
+  &-mod-3 {
+    &:before {
+      background-color: $color-yellow;
+    }
+  }
+  &-mod-4 {
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media-breakpoint-up(lg) {
+        left: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.divider-lg {
+  &:before {
+    content: '';
+    display: block;
+    border-bottom: 2px solid $color-emerland;
+  }
+}
+
+.divider-lg-2 {
+  &:before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid $gray-light;
+  }
+}
+
+.divider-lg-3 {
+  &:before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid $gray-dark;
+  }
+}
+
+.divider-lg-4 {
+  &:before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba($white, .3);
+  }
+}
+
+.divider-xs-2 {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 5px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 2px;
+  }
+}
+
+.divider-xs-3 {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 5px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 2px;
+  }
+}
+
+.divider-xs-4 {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 5px;
+    width: 30px;
+    background-color: $color-emerland;
+    border-radius: 2px;
+  }
+}
+
+.round-photo {
+  display: inline-block;
+  border-radius: 50%;
+  border: 10px solid $white;
+  box-shadow: 0 7px 0 0 $gray-light;
+  width: 190px;
+  height: 190px;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.round {
+  border-radius: 50%;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.video-block {
+  position: relative;
+
+  .mdi-play-circle-outline{
+    position: absolute;
+    display: inline-block;
+
+    background-color: transparent;
+    border:none;
+    font-family: "Material Design Icons";
+    color: $white;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: .3s;
+    z-index: 2;
+    width: 72px;
+    height: 72px;
+    &:before{
+      font-size: 72px;
+      left: 0;
+      top:0;
+      position: absolute;
+      line-height: 1;
+    }
+    &:hover{
+      cursor: pointer;
+      color: $color-emerland;
+    }
+  }
+}
+
+//Icons
+/////////////////////
+.icon-grid {
+  span {
+    vertical-align: middle;
+
+  }
+  li >span:nth-of-type(1) {
+    display: table-cell;
+    width: 30px;
+    padding-right: 20px;
+    vertical-align: top;
+  }
+  li >span:nth-of-type(2) {
+    display: table-cell;
+    width: auto;
+  }
+  .icon {
+    margin-right: 20px;
+  }
+}
+
+.img-width-auto {
+  img {
+    width: auto;
+  }
+}
+
+.page .margin-lg-top-313 {
+  @include media-breakpoint-up(xl) {
+    margin-top: -313px;
+  }
+}
+
+.page .margin-lg-top-257 {
+  @include media-breakpoint-up(xl) {
+    margin-top: -257px;
+  }
+}
+
+.page .margin-lg-top-232 {
+  @include media-breakpoint-up(xl) {
+    margin-top: -232px;
+  }
+}
+
+.page .margin-lg-top-208 {
+  @include media-breakpoint-up(xl) {
+    margin-top: -208px;
+  }
+}
+
+.page .margin-lg-top-309 {
+  @include media-breakpoint-up(xl) {
+    margin-top: -309px;
+  }
+}
+
+.page .margin-lg-top-227 {
+  @include media-breakpoint-up(xl) {
+    margin-top: -227px;
+  }
+}
+
+.countdown-wrapper {
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+.block-round {
+  border-radius: 6px;
+  background-color: $white;
+  overflow: hidden;
+}
+
+.block-round-black {
+  border-radius: 6px;
+  background-color: rgba($black, .3);
+  overflow: hidden;
+}
+.border-radius-6{
+  border-radius: 6px;
+  height: 100%;
+}
+.img-flex-bottom {
+  display: flex;
+  img {
+    align-self: flex-end;
+  }
+}
+
+.max-width-90 {
+  max-width: 85%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.align-items-stretch{
+  align-items: stretch;
+}
+
+.tooltip {
+
+  &.show {
+    opacity: 1;
+  }
+
+  &.bs-tooltip-top {
+
+    .arrow::before {
+      border-top-color: $color-shake;
+    }
+  }
+
+  &.bs-tooltip-right {
+
+    .arrow::before {
+      border-right-color: $color-shake;
+    }
+  }
+
+  &.bs-tooltip-bottom {
+
+    .arrow::before {
+      border-bottom-color: $color-shake;
+    }
+  }
+  &.bs-tooltip-left {
+
+    .arrow::before {
+      border-left-color: $color-shake;
+    }
+  }
+}

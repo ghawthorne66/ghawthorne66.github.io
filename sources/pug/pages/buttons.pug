@@ -1,0 +1,20 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+	- var page_active="Buttons"
+	- var page_active_h1="Buttons"
+
+block title
+	title Buttons
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Elements")
+	//Section Buttons
+	include ../sections/elements/_section_buttons-1
+
+	// Page Footer
+	include ../elements/_footer

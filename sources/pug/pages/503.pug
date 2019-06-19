@@ -1,0 +1,39 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 5
+
+block title
+	title 503
+
+block page
+	.page-404
+		// Page Header
+		header.page-head.section-top-30.section-lg-bottom-50
+			// RD Navbar Brand
+			.rd-navbar-brand
+				a.brand-name(href='index.html')
+					+png('logo-inverse-169x42')
+
+		section.section-top-50
+			.container
+				h3.divider-sm.divider-sm-mod-1 Service Is Temporary Unavailable
+				p.big.offset-top-43 503
+				p.offset-top-17 Sorry, we're offline right now to make our site even better. Please,<br class="veil reveal-md-inline"> come back later and check what we've been up to.
+				.btn-group-custom-3.offset-top-60
+					a(href="index.html").btn.btn-sm.btn-primary.btn-icon.btn-icon-left.btn-shadow.btn-rect.offset-top-30
+						span.icon.icon-md.mdi-arrow-left-bold
+						span  back to homepage
+					a(href="contacts.html").btn.btn-sm.btn-white.btn-icon.btn-icon-left.btn-shadow.btn-rect.offset-top-30
+						span.icon.icon-md.mdi-email-outline
+						span contact us
+
+		// Page Footer
+		footer.page-foot.section-50
+			p.privacy
+				| SeoAgent &#169;
+				=" "
+				span(class="copyright-year")
+				| .
+				=" "
+				a(href="privacy.html") Privacy Policy

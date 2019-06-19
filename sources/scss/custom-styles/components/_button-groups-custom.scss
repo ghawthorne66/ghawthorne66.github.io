@@ -1,0 +1,22 @@
+//
+// Button groups
+// --------------------------------------------------
+.btn-group-custom{
+  @include group(20px);
+}
+
+.btn-group-custom-1{
+  display: inline-block;
+  vertical-align: middle;;
+  .btn + .btn{
+    margin-left: 10px;
+  }
+}
+
+.btn-group-custom-2{
+  @include group(10px);
+}
+
+.btn-group-custom-3{
+  @include group(30px);
+}

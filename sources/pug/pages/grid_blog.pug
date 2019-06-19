@@ -1,0 +1,19 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 7
+	- var page_active="Grid Blog"
+	- var page_active_h1="Grid Blog"
+
+block title
+	title Grid Blog
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Blog")
+	include ../sections/blog/_section_grid_blog-1
+
+	// Page Footer
+	include ../elements/_footer

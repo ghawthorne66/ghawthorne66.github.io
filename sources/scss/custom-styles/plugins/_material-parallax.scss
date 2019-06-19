@@ -1,0 +1,67 @@
+/*
+* Material Parallax
+*/
+
+.parallax-content {
+	position: relative;
+	z-index: 1;
+}
+
+.parallax-container {
+	position: relative;
+	overflow: hidden;
+	background-position: center center;
+	background-size: cover;
+}
+
+.material-parallax {
+	position: absolute;
+	top: 0;
+	left: -1px;
+	right: -1px;
+	bottom: 0;
+	z-index: 0;
+	background-position: center center;
+}
+
+.ipad,
+.iphone {
+	.parallax-container {
+		background-attachment: scroll !important;
+	}
+}
+
+.material-parallax img {
+	display: none;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	min-width: 101%;
+	min-height: 101%;
+	width: auto;
+	max-width: none;
+	transform: translate3d(-50%, 0, 0);
+}
+
+.parallax-overlay {
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: inline-block;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		background-color: rgba($color-downriver, 0.8);
+		z-index: -1;
+	}
+	
+	// Extra large ≥1200px
+	@include media-breakpoint-up(xl) {
+
+		&:before {
+			display: none;
+		}
+	} 
+}

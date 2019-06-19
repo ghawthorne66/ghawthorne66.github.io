@@ -1,0 +1,20 @@
+extends  ../_skeleton
+
+block variables
+	- var activeIndex = 6
+	- var page_active="Masonry Gallery"
+	- var page_active_h1="Gallery"
+
+block title
+	title Masonry Gallery
+
+block page
+	// Page Header
+	include ../elements/_header
+
+	+breadcrumbs(2, "Gallery")
+	//Section Masonry gallery
+	include ../sections/gallery/_section_masonry_gallery-1
+
+	// Page Footer
+	include ../elements/_footer
